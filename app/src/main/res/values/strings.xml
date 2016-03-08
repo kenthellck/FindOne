@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Find One in Need</string>
+    <string name="lblogin">Login</string>
+    <string name="lbpassword">Password</string>
+    <string name="btnlogin">Login</string>
+    <string name="lbname">Name</string>
+    <string name="lbage">Age</string>
+    <string name="lbusername">UserName</string>
+    <string name="lbregpassword">Password</string>
+    <string name="btnregister">Register</string>
+    <string name="btnlogout">Logout</string>
+    <string name="lblreghere">Register Here</string>
+    <string name="tvregisterlink">tvregisterlink</string>
+
+    <string name="icologout">Logout</string>
+    <string name="icoinfo">Info</string>
+    <string name="icomes">Message</string>
+    <string name="iconews">News</string>
+    <string name="icoprof">Account</string>
+    <string name="icosearch">Search</string>
+    <string name="icomylist">List</string>
+    <string name="iconew">New</string>
+
+    <string name="imgbackground">backimag</string>
+</resources>
