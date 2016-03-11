@@ -1,109 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:scaleType="fitXY"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/tiles" />
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="527dp"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.praveen.human.MainMenu"
 
         android:outlineProvider="none"
-        android:useDefaultMargins="false">
+        android:useDefaultMargins="false"
+        android:background="#494949"
 
-        <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp"
-            android:id="@+id/icoprof"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            android:scaleType="fitXY"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:src="@mipmap/prof"
-            android:contentDescription="@string/icoprof"/>
+        android:weightSum="1"
+    android:columnCount="18"
+    android:rowCount="24"
+    android:alignmentMode="alignMargins"
+    android:rowOrderPreserved="true">
 
-        <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp
-            "
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            android:scaleType="fitXY"
-            android:layout_row="0"
-            android:layout_column="6"
 
-            android:contentDescription="@string/iconew"
-            android:src="@mipmap/list"
-            android:id="@+id/icomylist" />
+
 
 
         <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp
-            "
-            android:adjustViewBounds="true"
-            android:padding="1dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
             android:scaleType="fitXY"
-            android:layout_row="1"
-            android:layout_column="0"
+                android:id="@+id/icoprof"
+                android:src="@mipmap/contacts"
+                android:contentDescription="@string/icoprof"
+                android:background="#494949"
+          />
+
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:scaleType="fitXY"
+        android:layout_height="95dp"
+        android:src="@mipmap/info"
+        android:contentDescription="@string/icomes"
+        android:id="@+id/icoinfo"
+        android:background="#494949"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+
+
+                android:padding="1dp"
+            android:layout_width="95dp"
+        android:scaleType="fitXY"
+            android:layout_height="95dp"
+                android:contentDescription="@string/iconew"
+                android:src="@mipmap/mylist"
+                android:id="@+id/icomylist"
+                android:background="#494949"
+            android:layout_alignTop="@+id/icomes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+
+
+                android:src="@mipmap/exit"
+                android:contentDescription="@string/iconews"
+                android:clickable="true"
+                android:id="@+id/icologout"
+                android:background="#494949"
+        android:scaleType="fitXY"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/icomes"
+            android:layout_alignStart="@+id/icomes" />
+
+
+
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+
+            android:scaleType="fitXY"
             android:src="@mipmap/search"
             android:contentDescription="@string/icosearch"
             android:contextClickable="true"
-            android:id="@+id/icosearch" />
+            android:id="@+id/icosearch"
+            android:background="#494949"
+            android:layout_alignTop="@+id/icoprof"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-        <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp
-            "
-            android:layout_row="1"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            android:scaleType="fitXY"
-            android:layout_column="6"
-            android:src="@mipmap/msg"
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:scaleType="fitXY"
+        android:layout_height="95dp"
+
+            android:src="@mipmap/mes"
             android:contentDescription="@string/icomylist"
-            android:id="@+id/icomes" />
+            android:id="@+id/icomes"
+            android:background="#494949"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/icosearch"
+        android:layout_alignStart="@+id/icosearch" />
 
-        <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp
-            "
-            android:layout_row="2"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            android:scaleType="fitXY"
-            android:layout_column="0"
-            android:src="@mipmap/about"
-            android:contentDescription="@string/icomes"
-            android:id="@+id/icoinfo" />
+</RelativeLayout>
 
-        <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="120dp
-            "
-            android:layout_row="2"
-            android:adjustViewBounds="true"
-            android:padding="1dp"
-            android:scaleType="fitXY"
-            android:layout_column="6"
-            android:src="@mipmap/logoff"
-            android:contentDescription="@string/iconews"
-            android:clickable="true"
-            android:id="@+id/icologout" />
 
-    </GridLayout>
-</FrameLayout>
+
