@@ -27,8 +27,8 @@
 
 
         <ImageButton
-                android:layout_width="95dp"
-                android:layout_height="95dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
             android:scaleType="fitXY"
                 android:id="@+id/icoprof"
                 android:src="@mipmap/contacts"
@@ -38,9 +38,9 @@
 
 
     <ImageButton
-        android:layout_width="95dp"
+        android:layout_width="120dp"
         android:scaleType="fitXY"
-        android:layout_height="95dp"
+        android:layout_height="120dp"
         android:src="@mipmap/info"
         android:contentDescription="@string/icomes"
         android:id="@+id/icoinfo"
@@ -53,9 +53,9 @@
 
 
                 android:padding="1dp"
-            android:layout_width="95dp"
+            android:layout_width="120dp"
         android:scaleType="fitXY"
-            android:layout_height="95dp"
+            android:layout_height="120dp"
                 android:contentDescription="@string/iconew"
                 android:src="@mipmap/mylist"
                 android:id="@+id/icomylist"
@@ -66,8 +66,8 @@
 
 
     <ImageButton
-            android:layout_width="95dp"
-            android:layout_height="95dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
 
 
                 android:src="@mipmap/exit"
@@ -85,8 +85,8 @@
 
 
         <ImageButton
-            android:layout_width="95dp"
-            android:layout_height="95dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
 
             android:scaleType="fitXY"
             android:src="@mipmap/search"
@@ -100,9 +100,9 @@
 
 
     <ImageButton
-        android:layout_width="95dp"
+        android:layout_width="120dp"
         android:scaleType="fitXY"
-        android:layout_height="95dp"
+        android:layout_height="120dp"
 
             android:src="@mipmap/mes"
             android:contentDescription="@string/icomylist"

@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
     EditText etUsername,etPassword;
     Button bLogin;
+    TextView tvregisterlink;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +20,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         etUsername=(EditText)findViewById(R.id.etUsername);
         etPassword=(EditText)findViewById(R.id.etPassword);
         bLogin=(Button)findViewById(R.id.bLogin);
+        tvregisterlink=(TextView)findViewById(R.id.tvregisterlink);
         bLogin.setOnClickListener(this);
-
+tvregisterlink.setOnClickListener(this);
     }
 
     @Override
@@ -28,10 +31,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         String uname=etUsername.getText().toString();
         String pass=etPassword.getText().toString();
 
-           /* User user=new User(null,null);
-            userLocalStore.storeUserData(user);
-            userLocalStore.setUserLoggedIn(true);*/
 
+if(v.getId()==R.id.bLogin)
+{
         if((uname.equals("ck"))&&(pass.equals("123123")))
         {
 
@@ -40,6 +42,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             startActivity(new Intent(this,MainMenu.class));
         }
     }
+    else if(v.getId()==R.id.tvregisterlink)
+{
+
+    startActivity(new Intent(this,Register.class));
+}
+    }
+
+
 /* public void onClick() {
 
             Toast.makeText(Login.this,

@@ -11,6 +11,7 @@
     <string name="btnlogout">Logout</string>
     <string name="lblreghere">Register Here</string>
     <string name="tvregisterlink">tvregisterlink</string>
+    <string name="regName">Name</string>
 
     <string name="icologout">Logout</string>
     <string name="icoinfo">Info</string>
