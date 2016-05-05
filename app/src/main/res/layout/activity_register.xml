@@ -8,50 +8,55 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.praveen.findone.Register">
+    tools:context="com.example.praveen.findone.Register"
+    android:background="#494949">
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Name"/>
+    android:text="Name"
+    android:textColor="#fffcd5" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:id="@+id/regname"
-        />
+        android:textColor="#ffffff" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Age"/>
+        android:text="Age"
+        android:textColor="#fffcd5" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:inputType="number"
         android:id="@+id/regage"
-        />
+        android:textColor="#ffffff" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"/>
+        android:text="Email"
+        android:textColor="#fffcd5" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:id="@+id/regemail"
-        />
+        android:textColor="#ffffff" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"/>
+        android:text="Password"
+        android:textColor="#fffcd5" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword"
         android:id="@+id/regpassword"
-        />
+        android:textColor="#ffffff" />
     <TextView
         android:paddingTop="16px"
         android:id="@+id/output"
@@ -69,5 +74,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/regbutton"
         android:text="Register"
-        />
+        android:background="#ffb700"
+        android:allowUndo="true" />
 </LinearLayout>

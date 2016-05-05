@@ -1,5 +1,6 @@
 package com.example.praveen.findone;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,16 +16,18 @@ public class Mylist extends AppCompatActivity implements View.OnClickListener {
     private Button mylistAddbtn;
     private EditText mylistName,mylistCat,mylistdes;
     private TableLayout tableLayout1;
+    String userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mylist);
+        Intent intent = getIntent();
+        userId = intent.getStringExtra("ID");
         dbHelper = new DbHelper(getApplicationContext());
         mylistAddbtn = (Button) findViewById(R.id.mylistAddbtn);
         mylistName = (EditText) findViewById(R.id.mylistName);
         mylistCat = (EditText) findViewById(R.id.mylistCat);
         mylistdes = (EditText) findViewById(R.id.mylistdes);
-
 //        Attaching listeners for all buttons
         mylistAddbtn.setOnClickListener(this);
         tableLayout1 =(TableLayout)findViewById(R.id.tableLayout1);

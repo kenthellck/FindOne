@@ -45,7 +45,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         bLogin=(Button)findViewById(R.id.bLogin);
         tvregisterlink=(TextView)findViewById(R.id.tvregisterlink);
         bLogin.setOnClickListener(this);
-tvregisterlink.setOnClickListener(this);
+        tvregisterlink.setOnClickListener(this);
         bLogin.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -180,8 +180,9 @@ tvregisterlink.setOnClickListener(this);
 
                     Toast.makeText(Login.this,
                             "Welcome", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(Login.this, MainMenu.class);
-                    startActivity(intent);
+                    Intent myIntent = new Intent(getApplicationContext(), MainMenu.class);
+                    myIntent.putExtra("ID",etUsername.getText().toString() );
+                    startActivity(myIntent);
 
                 }
                 else

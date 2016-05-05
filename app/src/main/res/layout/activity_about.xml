@@ -9,14 +9,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.praveen.findone.About"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#494949">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="About"
-        android:background="#c8c8c8"
+        android:background="#ffb700"
         android:orientation="vertical"
         android:gravity="center"
         android:id="@+id/textView"
@@ -38,7 +39,10 @@
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:background="#494949"
+        android:autoText="true" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
-        android:background="#c8c8c8" />
+        android:background="#ffb700" />
 <GridLayout
     android:layout_width="wrap_content"
     android:layout_height="match_parent">
@@ -75,7 +79,8 @@ praveengunaratna@yahoo.com
         android:layout_row="0"
         android:layout_column="1"
         android:textSize="14dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff" />
     <ImageView
         android:layout_width="87dp"
         android:layout_height="45dp"
@@ -94,7 +99,8 @@ archchanakugathasan@gmail.com
         android:layout_row="1"
         android:layout_column="1"
         android:layout_gravity="center_horizontal"
-        android:textSize="14dp"/>
+        android:textSize="14dp"
+        android:textColor="#ffffff" />
 
 </GridLayout>
 

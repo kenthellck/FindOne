@@ -15,10 +15,13 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
     ImageButton bLogout;
     ImageButton bList;
     ImageButton bSearch;
+    String userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        Intent intent = getIntent();
+         userId = intent.getStringExtra("ID");
         bProfile=(ImageButton)findViewById(R.id.icoprof);
         bProfile.setOnClickListener(this);
         bAbout=(ImageButton)findViewById(R.id.icoinfo);
@@ -53,7 +56,10 @@ else if(v.getId()==R.id.icosearch)
 }
 else if(v.getId()==R.id.icomylist)
 {
-    startActivity(new Intent(this,Mylist.class));
+
+    Intent myIntent = new Intent(getApplicationContext(), Mylist.class);
+    myIntent.putExtra("ID",userId);
+    startActivity(myIntent);
 }
 else if(v.getId()==R.id.icologout)
 {

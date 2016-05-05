@@ -14,15 +14,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:text="as"/>
+        android:text="Name"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mylistName"/>
+        android:id="@+id/mylistName"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Cat"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mylistCat"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Descreption"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
